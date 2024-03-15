@@ -1,11 +1,15 @@
-# Project - "Les Chaises Musicales" <img src="https://github.com/adatechschool/projet-collectif-plateforme-de-meubles-leschaisesmusicales/blob/main/front/src/assets/images/logo.png" width=15% height=15%> 
+[![made-with-javascript](https://img.shields.io/badge/Made%20with-Javascript-326996.svg)](https://www.javascript.com)
+[![made-with-javascript](https://img.shields.io/badge/Made%20with-React+Vite-326996.svg)](https://www.javascript.com)
+[![made-with-javascript](https://img.shields.io/badge/Made%20with-NodeJS+Express-326996.svg)](https://www.javascript.com)
+[![made-with-javascript](https://img.shields.io/badge/Made%20with-Chakra-326996.svg)](https://www.javascript.com)
+
+# Project - "Les Chaises Musicales" <img src="https://github.com/adatechschool/projet-collectif-plateforme-de-meubles-leschaisesmusicales/blob/main/front/src/assets/images/logo.png" width=15% height=15%>
 
 "Les Chaises Musicales" is a website for selling second-hand furniture, and even antiques, developed as part of a school collective project at **_Ada Tech School_**.
 
 ![filtres](https://github.com/adatechschool/projet-collectif-plateforme-de-meubles-leschaisesmusicales/assets/146881805/aa0e85d3-daa9-4748-872e-f83cf429e77b)
 ![pageAdmin](https://github.com/adatechschool/projet-collectif-plateforme-de-meubles-leschaisesmusicales/assets/146881805/a09f8fb4-e48b-4909-a71e-1a4ffec88dee)
 ![pagesConnexionInscrption](https://github.com/adatechschool/projet-collectif-plateforme-de-meubles-leschaisesmusicales/assets/146881805/12f2b52d-07c0-43d1-8cd0-ef419610f46b)
-
 
 ## Project's context
 
@@ -49,20 +53,20 @@ Collaboration between the two teams was essential to ensure the project's succes
 1. Create your database (on alwaysdata for example!)
 2. To link your database to the project, create a file named 'connexionDB.json' in the 'back' folder and fill it with your informations, following this model :
 
-    `{
-    "host": "Tape here the url of your database...",
-    "user": "Tape here your user name...",
-    "password": "Tape here your password...",
-    "database": "Tape here the nam of your DB..."
-    }`
+   `{
+"host": "Tape here the url of your database...",
+"user": "Tape here your user name...",
+"password": "Tape here your password...",
+"database": "Tape here the nam of your DB..."
+}`
 
 3. Go in 'back' folder, open your terminal, and run this command :
-    `npm install`
-    `npm start`
+   `npm install`
+   `npm start`
 
 4. Go in 'front' folder, open your terminal and run this command :
-    `npm install`
-    `npm run dev`
+   `npm install`
+   `npm run dev`
 
 There you go !
 
