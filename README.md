@@ -19,13 +19,15 @@
 ## My role in the project
 
 I was part of the team dedicated to building the back-end. After 5 days, we switched teams as intented in the project's rules
+- Regarding back-end features, we launched the server on node and express.js. We designed the database and made the hosting choices for it. We also started building the API and defining the routes we wanted to use.
+
+- When our team then switched over to the front-end, part of the time was spent understanding the front-end codebase and the features that our colleagues had started to implement. I then took charge of the filtering functionality on the homepage.
+
 
 ## Objectives
 
 The project aimed to meet the needs of a client who wanted an interactive website allowing users to sell their furniture. Additionally, the client wanted an admin page to manage product stock.
 For us, the major challenge was to learn how to properly communicate through the whole process.
-
-## Task Allocation
 
 ### Backend:
 
