@@ -23,7 +23,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/" element={<Home />} />
           {/* Path = '/' -> page par défaut */}
           <Route path="/product/:id" element={<Product />} />
-          {/* Path = '/"exemple"' -> permet d'accder à la page correspondante voir <Link> page Home */}
+          {/* Path = '/"exemple"' -> permet d'accéder à la page correspondante voir <Link> page Home */}
           <Route path="/connexion" element={<Connexion />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/inscription" element={<Inscription />} />
