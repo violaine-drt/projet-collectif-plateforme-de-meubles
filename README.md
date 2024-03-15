@@ -10,8 +10,7 @@
 
 
 ![filtres](https://github.com/adatechschool/projet-collectif-plateforme-de-meubles-leschaisesmusicales/assets/146881805/aa0e85d3-daa9-4748-872e-f83cf429e77b)
-![pageAdmin](https://github.com/adatechschool/projet-collectif-plateforme-de-meubles-leschaisesmusicales/assets/146881805/a09f8fb4-e48b-4909-a71e-1a4ffec88dee)
-![pagesConnexionInscrption](https://github.com/adatechschool/projet-collectif-plateforme-de-meubles-leschaisesmusicales/assets/146881805/12f2b52d-07c0-43d1-8cd0-ef419610f46b)
+
 
 ## Project's context
 
