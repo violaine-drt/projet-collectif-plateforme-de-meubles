@@ -8,6 +8,7 @@
 
 "Les Chaises Musicales" is a website for selling second-hand furniture, and even antiques, developed as part of a school collective project at **_Ada Tech School_**.
 
+
 ![filtres](https://github.com/adatechschool/projet-collectif-plateforme-de-meubles-leschaisesmusicales/assets/146881805/aa0e85d3-daa9-4748-872e-f83cf429e77b)
 ![pageAdmin](https://github.com/adatechschool/projet-collectif-plateforme-de-meubles-leschaisesmusicales/assets/146881805/a09f8fb4-e48b-4909-a71e-1a4ffec88dee)
 ![pagesConnexionInscrption](https://github.com/adatechschool/projet-collectif-plateforme-de-meubles-leschaisesmusicales/assets/146881805/12f2b52d-07c0-43d1-8cd0-ef419610f46b)
@@ -15,6 +16,10 @@
 ## Project's context
 
 "Les Chaises Musicales" was designed and developed over a period of two weeks with the participation of 10 learners. The participants were divided into two teams of 5 individuals, with one focusing on backend development and the other on frontend. At the end of the first week, the teams switched between the two technology stacks for a better overall understanding of the project.
+
+## My role in the project
+
+I was part of the team dedicated to building the back-end. After 5 days, we switched teams as intented in the project's rules
 
 ## Objectives
 
