@@ -2,6 +2,7 @@
 [![made-with-javascript](https://img.shields.io/badge/Made%20with-React+Vite-326996.svg)](https://www.javascript.com)
 [![made-with-javascript](https://img.shields.io/badge/Made%20with-NodeJS+Express-326996.svg)](https://www.javascript.com)
 [![made-with-javascript](https://img.shields.io/badge/Made%20with-ChakraUI-326996.svg)](https://www.javascript.com)
+[![made-with-javascript](https://img.shields.io/badge/Made%20with-MySQL-326996.svg)](https://www.javascript.com)
 
 # Project - "Les Chaises Musicales" <img src="https://github.com/adatechschool/projet-collectif-plateforme-de-meubles-leschaisesmusicales/blob/main/front/src/assets/images/logo.png" width=15% height=15%>
 
