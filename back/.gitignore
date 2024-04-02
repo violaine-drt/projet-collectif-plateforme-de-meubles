@@ -1,2 +1,3 @@
 node_modules
 connexionDB.json
+sessionSecret.js
