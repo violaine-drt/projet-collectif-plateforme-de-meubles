@@ -1,6 +1,12 @@
 import React from "react";
 const apiUrl = "http://localhost:3000/";
 
+
+export function fetchMeublesFiltres(filtre,valeur) {
+    return fetch(`${apiUrl}searchbar/?${filtre}=${valeur}`)
+    .then(response => response.json())
+}
+
 export function fetchMeubles() {
     return fetch(`${apiUrl}meubles`)
     //Pas de method précisée : GET par défaut
@@ -70,8 +76,5 @@ export function fetchSuppressionMeuble(id){
 }
     
        
-export function fetchMeublesFiltres(filtre,valeur) {
-    return fetch(`${apiUrl}searchbar/?${filtre}=${valeur}`)
-    .then(response => response.json())
-}
+
 

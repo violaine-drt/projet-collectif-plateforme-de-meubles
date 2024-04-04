@@ -1,20 +1,5 @@
 const database = require("../database");
 
-// Récupérer un nombre donné de meubles ou 6 
-exports.nombreLimiteDeMeubles = (req, res) => { 
-    let limit = req.query.limit || 6 ; 
-    let query = `SELECT Meubles.nom, Meubles.descriptif, Meubles.photo, Meubles.prix FROM Meubles LIMIT ${limit}`;
-    database.query(query,  (err, rows) => {
-        if (err) {
-          console.log("erreur dans la requête", err);
-          res.status(500).send("erreur interne du serveur");
-          return;
-        } else {
-        console.log("Resultat de la requête:", rows);
-        res.json(rows);
-       }
-      });
-    }
 
 //Récupérer tous les meubles par défaut, ou des meubles filtrés
 //TODO, modifier cette route pour lui permettre de prendre en compte plusieurs filtres en meme temps (ex: je veux des chaises rouges en velours)
@@ -36,10 +21,9 @@ exports.meublesParParametres = (req, res) => {
     
     //On gère le cas où aucun paramètre n'a été passé dans l'url de la requete (pas de filtre)
       if (couleur === undefined && categorie === undefined && matiere === undefined && id === undefined && prix === undefined && stock === undefined){
-    
         database.query("SELECT Meubles.id, Meubles.nom, Meubles.descriptif,Meubles.photo, Meubles.prix FROM Meubles", (err, rows, fields) => {
           if (err) {
-            console.log("erreur dans la requête", err);
+            console.log("erreur dans la requête globale", err);
             res.status(500).send("erreur interne du serveur");
             return;
           }
@@ -49,7 +33,6 @@ exports.meublesParParametres = (req, res) => {
       }
     
       //On gère au cas par cas les paramètres passés. Pour l'instant la fonction ne gère pas plusieurs paramètres en meme temps
-    
       else if (couleur != undefined) {
         database.query("SELECT Meubles.nom, Meubles.descriptif,Meubles.photo, Meubles.prix FROM Meubles INNER JOIN Couleurs ON Meubles.couleur_id = Couleurs.id WHERE Couleurs.nom = ?",[couleur],(err, rows, fields) => {
           if (err) {
@@ -125,7 +108,48 @@ exports.meublesParParametres = (req, res) => {
         });
       }
     };
-    
+
+
+//Récupérer les listes de filtres
+exports.recupererListeMatieres = (req,res) => {
+
+  database.query("SELECT Matieres.nom, Matieres.id FROM Matieres", (err, rows) => {
+      if (err) {
+      console.log("erreur dans la requête", err);
+      res.status(500).send("erreur interne du serveur");
+      return;
+      }
+      console.log("Resultat de la requête:", rows);
+      res.json(rows);
+  });
+  }
+  
+  exports.recupererListeCouleurs = (req, res) => {
+  
+  database.query("SELECT Couleurs.nom, Couleurs.id FROM Couleurs", (err, rows) => {
+      if (err) {
+      console.log("erreur dans la requête", err);
+      res.status(500).send("erreur interne du serveur");
+      return;
+      }
+      console.log("Resultat de la requête:", rows);
+      res.json(rows);
+  });
+  };
+  
+  exports.recupererListeCategories = (req, res) => {
+  
+  database.query("SELECT Categories.nom, Categories.id FROM Categories", (err, rows) => {
+      if (err) {
+      console.log("erreur dans la requête", err);
+      res.status(500).send("erreur interne du serveur");
+      return;
+      }
+      console.log("Resultat de la requête:", rows);
+      res.json(rows);
+  });
+  };
+  
     
 // Récupérer tous les meubles en stock 
 exports.meublesEnStockUniquement = (req, res) => {
@@ -157,5 +181,22 @@ exports.meublesEnStockParId = (req, res) => {
      
       });
     }
+
+
+// Récupérer un nombre donné de meubles ou 6 
+exports.nombreLimiteDeMeubles = (req, res) => { 
+  let limit = req.query.limit || 6 ; 
+  let query = `SELECT Meubles.nom, Meubles.descriptif, Meubles.photo, Meubles.prix FROM Meubles LIMIT ${limit}`;
+  database.query(query,  (err, rows) => {
+      if (err) {
+        console.log("erreur dans la requête", err);
+        res.status(500).send("erreur interne du serveur");
+        return;
+      } else {
+      console.log("Resultat de la requête:", rows);
+      res.json(rows);
+     }
+    });
+  }
 
   
